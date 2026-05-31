@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare
+name: Build rules
 
 on:
   push:
@@ -24,10 +24,3 @@ jobs:
 
       - name: Build rules
         run: pnpm run build
-
-      - name: Deploy to Cloudflare Worker
-        uses: cloudflare/wrangler-action@v4
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
