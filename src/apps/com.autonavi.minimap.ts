@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '开屏广告',
       rules: {
-        matches: 'TextView[text="跳过"]',
+        matches: 'TextView[text^="跳过"]',
       },
     },
   ],
