@@ -7,6 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      fastQuery: true,
       rules: {
         matches: 'TextView[id="com.yek.android.kfc.activitys:id/splash_tv_3"]',
       },
