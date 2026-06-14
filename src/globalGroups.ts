@@ -1,3 +1,3 @@
-import { defineGkdGlobalGroups } from '@gkd-kit/define';
+import { defineGkdGlobalGroups } from "@gkd-kit/define";
 
 export default defineGkdGlobalGroups([]);

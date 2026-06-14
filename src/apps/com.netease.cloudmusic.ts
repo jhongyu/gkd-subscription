@@ -1,15 +1,15 @@
-import { defineGkdApp } from '@gkd-kit/define';
+import { defineGkdApp } from "@gkd-kit/define";
 
 export default defineGkdApp({
-  id: 'com.netease.cloudmusic',
-  name: '网易云音乐',
+  id: "com.netease.cloudmusic",
+  name: "网易云音乐",
   groups: [
     {
       key: 0,
-      name: '开屏广告',
+      name: "开屏广告",
       fastQuery: true,
       rules: {
-        matches: 'TextView[id="com.netease.cloudmusic:id/skipBtn"]',
+        matches: "TextView[id='com.netease.cloudmusic:id/skipBtn']",
       },
     },
   ],
