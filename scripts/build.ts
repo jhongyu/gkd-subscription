@@ -1,4 +1,14 @@
-import { updateDist } from '@gkd-kit/tools';
-import subscription from './check';
+import fs from "node:fs/promises";
+import path from "node:path";
 
-await updateDist(subscription);
+import subscription from "../src/subscription";
+
+await fs.writeFile(
+  path.join(import.meta.dirname, "..", "dist", "gkd.json"),
+  JSON.stringify(subscription),
+);
+
+await fs.writeFile(
+  path.join(import.meta.dirname, "..", "dist", "gkd.version.json"),
+  JSON.stringify({ id: subscription.id, version: subscription.version }),
+);
