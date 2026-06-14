@@ -7,7 +7,7 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
       '@gkd-kit/api':
         specifier: 0.9.3
         version: 0.9.3
@@ -26,6 +26,12 @@ importers:
       lint-staged:
         specifier: 16.3.2
         version: 16.3.2
+      oxfmt:
+        specifier: ^0.54.0
+        version: 0.54.0
+      oxlint:
+        specifier: ^1.69.0
+        version: 1.69.0
       simple-git-hooks:
         specifier: 2.13.1
         version: 2.13.1
@@ -35,13 +41,6 @@ importers:
       typescript:
         specifier: 5.9.3
         version: 5.9.3
-    devDependencies:
-      oxfmt:
-        specifier: ^0.54.0
-        version: 0.54.0
-      oxlint:
-        specifier: ^1.69.0
-        version: 1.69.0
 
 packages:
 
