@@ -9,7 +9,7 @@ export default defineGkdSubscription({
   name: "gkd-subscription",
   version: 20260602,
   author: "jhongyu",
-  checkUpdateUrl: "./gkd.version.json5",
+  checkUpdateUrl: "./gkd.version.json",
   supportUri: "https://github.com/jhongyu/gkd-subscription",
   categories,
   globalGroups,
