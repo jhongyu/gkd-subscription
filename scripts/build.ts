@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-import subscription from "../src/subscription";
+import subscription from "../src/subscription.ts";
 
 await fs.writeFile(
   path.join(import.meta.dirname, "..", "dist", "gkd.json"),

@@ -1,8 +1,8 @@
 import { defineGkdSubscription } from "@gkd-kit/define";
 import { batchImportApps } from "@gkd-kit/tools";
 
-import categories from "./categories";
-import globalGroups from "./globalGroups";
+import categories from "./categories.ts";
+import globalGroups from "./globalGroups.ts";
 
 export default defineGkdSubscription({
   id: 55676,
