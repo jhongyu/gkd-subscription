@@ -14,7 +14,7 @@
     "@gkd-kit/define": "^0.0.1",
     "@gkd-kit/tools": "^0.8.0",
     "@types/node": "^26.0.0",
-    "lint-staged": "^17.0.8",
+    "lint-staged": "^17.0.7",
     "oxfmt": "^0.54.0",
     "oxlint": "^1.69.0",
     "simple-git-hooks": "^2.13.1",
@@ -28,8 +28,16 @@
     "*": "oxfmt --no-error-on-unmatched-pattern",
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint"
   },
-  "engines": {
-    "node": ">=24"
-  },
-  "packageManager": "pnpm@10.31.0"
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": ">=11.0.0 <12.0.0",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "^24.17.0",
+      "onFail": "download"
+    }
+  }
 }
