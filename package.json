@@ -11,17 +11,14 @@
     "build": "tsc --noEmit && node ./scripts/build.ts"
   },
   "devDependencies": {
-    "@gkd-kit/api": "0.9.3",
-    "@gkd-kit/define": "0.0.1",
-    "@gkd-kit/tools": "0.8.0",
-    "@types/node": "25.3.5",
-    "json5": "2.2.3",
-    "lint-staged": "16.3.2",
+    "@gkd-kit/define": "^0.0.1",
+    "@gkd-kit/tools": "^0.8.0",
+    "@types/node": "^26.0.0",
+    "lint-staged": "^17.0.8",
     "oxfmt": "^0.54.0",
     "oxlint": "^1.69.0",
-    "simple-git-hooks": "2.13.1",
-    "tsx": "4.21.0",
-    "typescript": "5.9.3"
+    "simple-git-hooks": "^2.13.1",
+    "typescript": "^6.0.3"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged",
